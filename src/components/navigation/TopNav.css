@@ -1,0 +1,12 @@
+.nav-link__container {
+  display: flex;
+  column-gap: 6px;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 10px 5px;
+  border: 1px solid #001848;
+  border-radius: 10px;;
+
+}
