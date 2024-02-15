@@ -4,7 +4,7 @@ import FaqBlock from './FaqBlock';
 import './FaqSection.css';
 
 let toggleAccordion = (event) => {
-	console.log(event.target);
+	event.preventDefault();
 
 	event.target.parentElement.parentElement.nextElementSibling.classList.toggle(
 		'show'
