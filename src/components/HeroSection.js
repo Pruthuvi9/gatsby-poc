@@ -26,7 +26,7 @@ const HeroSection = (props) => {
 					)}
 					{props.ausProofPoint && <AusProofPoint />}
 					<div className='trustpilot-widget-container'>
-						<StaticImage src='../images/trustpilot-image-desktop.png' />
+						<StaticImage src='../images/trustpilot-image-desktop.png' alt='' />
 					</div>
 				</div>
 			</div>

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_wordpress_blog=self.webpackChunkgatsby_starter_wordpress_blog||[]).push([[539],{3945:function(e,t,s){s.r(t);var r=s(7294),a=(s(1883),s(4333)),l=s(9357);t.default=e=>{const t="About Us";return r.createElement(a.Z,{title:t},r.createElement(l.Z,{title:t}),r.createElement("h1",null,"About us page"),r.createElement("p",null,"This is the about us page"))}}}]);
+//# sourceMappingURL=component---src-pages-about-us-js-1fa7d1b37d922a9018fe.js.map
