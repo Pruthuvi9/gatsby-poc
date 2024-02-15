@@ -1,0 +1,22 @@
+.mb-faqs-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faqs-container {
+  width: 90%;
+  max-width: 960px;
+  margin-top: 24px;
+}
+
+.more-faqs-text {
+  margin-top: 16px;
+}
+
+@media (width <=667px) {
+  .more-faqs-text {
+    width: 90%;
+    text-align: center;
+  }
+}

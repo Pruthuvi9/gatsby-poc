@@ -1,0 +1,44 @@
+.input-container {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.input-container.small-field {
+  width: calc(50% - 10px);
+}
+
+.input-container.email-field {
+  width: 100%;
+}
+
+.input-container input {
+  display: block;
+  border-color: #dee4ef;
+  border-style: solid;
+  border-width: 0 0 1px;
+  width: 100%;
+  color: #000572;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0;
+  padding: 0 6px;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  transition: all .3s ease-in-out;
+}
+
+.input-container label {
+  font-size: 20px;
+  color: #99a3b6;
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  transition: all .3s ease-in-out;
+}
+
+@media (width <=667px) {
+  .input-container.small-field {
+    width: 100%;
+  }
+}

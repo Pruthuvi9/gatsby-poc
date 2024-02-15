@@ -1,0 +1,22 @@
+.mb-sliding-menu {
+  position: relative;
+  display: flex;
+  width: fit-content;
+  background-color: #f1f1fb;
+  border-radius: 48px;
+  margin: 24px auto 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.slider-btn {
+  border: none;
+  cursor: pointer;
+  background-color: #f1f1fb;
+  border: 2px solid #f1f1fb;
+  border-radius: 48px;
+  color: #0074D9;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 14px 32px;
+}

@@ -1,0 +1,28 @@
+/* .slide-container:first-child {
+  display: block;
+}
+
+.slide-container {
+  display: none;
+  transition: opacity 400ms;
+} */
+
+.slide-container {
+  /* position: absolute;
+  opacity: 0;
+  height: 0; */
+  display: none;
+}
+
+.slide-container:nth-child(1) {
+  position: relative;
+  display: block;
+  opacity: 1;
+  height: 100%;
+}
+
+@media (width <=667px) {
+  .our-services-slider {
+    display: none;
+  }
+}

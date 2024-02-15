@@ -1,0 +1,33 @@
+.proofpoint-text-container {
+  width: 52%;
+  padding-left: 20px;
+  border-left: 4px solid #03CEA4;
+}
+
+.proofpoint-text-container p {
+  font-size: 34px;
+  line-height: 40px;
+}
+
+@media (width <=1124px) {
+  .proofpoint-text-container {
+    padding-left: 16px;
+  }
+
+  .proofpoint-text-container p {
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
+
+@media (width <=834px) {
+
+  .proofpoint-text-container {
+    width: 100%;
+  }
+
+  .proofpoint-text-container p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}

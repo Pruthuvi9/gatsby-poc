@@ -1,0 +1,148 @@
+.footer {
+  background-color: #001E44;
+  padding-top: 80px;
+}
+
+.footer-nav-link__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 36px;
+  row-gap: 36px;
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.footer-nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-ndis-logo-container,
+.footer-rating-app-links-container,
+.footer-disclaimer-container {
+  padding: 60px 0;
+  border-bottom: 1px solid #5a6a8c;
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.footer-ndis-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-rating-app-links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 60px;
+}
+
+.footer-rating-container {
+  display: flex;
+  flex-wrap: nowrap;
+  column-gap: 60px;
+  padding-right: 60px;
+  border-right: 1px solid #5a6a8c;
+}
+
+.footer-app-link-container {
+  display: flex;
+  column-gap: 60px;
+}
+
+.prod-rev-logo-footer,
+.trustpilot-logo-footer {
+  width: 100%;
+  height: auto;
+}
+
+.footer-disclaimer-container p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #99a3b6;
+  text-align: center;
+}
+
+.footer-bottom-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 24px 0;
+}
+
+.footer-bottom-links-container {
+  display: flex;
+  column-gap: 26px;
+}
+
+.footer-bottom-link {
+  color: var(--white);
+  font-size: 14px;
+}
+
+.footer-socials-container {
+  display: flex;
+  column-gap: 20px;
+}
+
+@media (width <=834px) {
+  .footer-bottom-nav-container {
+    flex-direction: column-reverse;
+    row-gap: 32px;
+  }
+}
+
+@media (width <=667px) {
+  .footer {
+    padding-top: 60px;
+  }
+
+  .footer-nav-link__container {
+    flex-direction: column-reverse;
+  }
+
+  .footer-ndis-logo-container {
+    width: 160px;
+    padding: 30px 0 20px;
+    border-bottom: none;
+  }
+
+  .footer-rating-app-links-container {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+
+  .footer-rating-app-links-container {
+    border-top: 1px solid #5a6a8c;
+  }
+
+  .footer-rating-container {
+    padding: 0;
+  }
+
+  .footer-rating-container,
+  .footer-app-link-container {
+    border: none;
+    flex-direction: column;
+    row-gap: 40px;
+  }
+
+  .footer-social-icon {
+    width: 40px;
+  }
+
+  .footer-bottom-links-container {
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 16px;
+  }
+}

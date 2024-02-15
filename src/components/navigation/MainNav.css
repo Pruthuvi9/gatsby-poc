@@ -1,0 +1,74 @@
+.main-nav__container {
+  border-bottom: 1px #f0f0f0 solid;
+}
+
+.main-nav__sub-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 32px 0 22px;
+}
+
+.main-nav_sublinks {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 50px;
+  flex: 1 0;
+  margin-right: 76px;
+}
+
+.main-nav-link {
+  font-size: 18px;
+}
+
+.main-nav-mybudget-logo {
+  margin-right: 20px;
+}
+
+.mb-btn-w-icon {
+  display: flex;
+  column-gap: 10px;
+}
+
+.main-nav-cta-container {
+  display: flex;
+  column-gap: 16px;
+}
+
+.search-btn {
+  padding: 0;
+  border: none;
+  outline: none;
+  background: 0 0;
+  cursor: pointer;
+}
+
+@media (width <=1400px) {
+  .main-nav_sublinks {
+    display: none;
+  }
+}
+
+@media (width <=1124px) {
+  .main-nav__sub-container {
+    padding: 10px 0;
+  }
+
+  .main-nav-mybudget-logo {
+    padding-top: 10px;
+    width: 140px;
+  }
+}
+
+@media (width <=667px) {
+  .main-nav-mybudget-logo {
+    width: 120px;
+  }
+
+  .main-nav-cta-container .enquiry-btn {
+    display: none;
+  }
+}

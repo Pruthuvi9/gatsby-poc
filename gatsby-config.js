@@ -7,74 +7,100 @@
  */
 
 module.exports = {
-  /**
-   * Adding plugins to this array adds them to your Gatsby site.
-   *
-   * Gatsby has a rich ecosystem of plugins.
-   * If you need any more you can search here: https://www.gatsbyjs.com/plugins/
-   */
-  plugins: [
-    {
-      /**
-       * First up is the WordPress source plugin that connects Gatsby
-       * to your WordPress site.
-       *
-       * visit the plugin docs to learn more
-       * https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-source-wordpress/README.md
-       *
-       */
-      resolve: `gatsby-source-wordpress`,
-      options: {
-        // the only required plugin option for WordPress is the GraphQL url.
-        url:
-          process.env.WPGRAPHQL_URL ||
-          `http://localhost:10003/graphql`,
-      },
-    },
+	/**
+	 * Adding plugins to this array adds them to your Gatsby site.
+	 *
+	 * Gatsby has a rich ecosystem of plugins.
+	 * If you need any more you can search here: https://www.gatsbyjs.com/plugins/
+	 */
+	plugins: [
+		{
+			/**
+			 * First up is the WordPress source plugin that connects Gatsby
+			 * to your WordPress site.
+			 *
+			 * visit the plugin docs to learn more
+			 * https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-source-wordpress/README.md
+			 *
+			 */
+			resolve: `gatsby-source-wordpress`,
+			options: {
+				// the only required plugin option for WordPress is the GraphQL url.
+				url: process.env.WPGRAPHQL_URL || `http://localhost:10003/graphql`,
+			},
+		},
 
-    /**
-     * We need this plugin so that it adds the "File.publicURL" to our site
-     * It will allow us to access static url's for assets like PDF's
-     *
-     * See https://www.gatsbyjs.org/packages/gatsby-source-filesystem/ for more info
-     */
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `assets`,
-        path: `${__dirname}/content/assets`,
-      },
-    },
+		/**
+		 * We need this plugin so that it adds the "File.publicURL" to our site
+		 * It will allow us to access static url's for assets like PDF's
+		 *
+		 * See https://www.gatsbyjs.org/packages/gatsby-source-filesystem/ for more info
+		 */
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				path: `${__dirname}/src/images`,
+				name: `images`,
+			},
+		},
 
-    /**
-     * The following two plugins are required if you want to use Gatsby image
-     * See https://www.gatsbyjs.com/docs/gatsby-image/#setting-up-gatsby-image
-     * if you're curious about it.
-     */
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-image`,
-    {
-      // See https://www.gatsbyjs.com/plugins/gatsby-plugin-manifest/?=gatsby-plugin-manifest
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Gatsby Starter WordPress Blog`,
-        short_name: `GatsbyJS & WP`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
-      },
-    },
+		/**
+		 * The following two plugins are required if you want to use Gatsby image
+		 * See https://www.gatsbyjs.com/docs/gatsby-image/#setting-up-gatsby-image
+		 * if you're curious about it.
+		 */
+		`gatsby-transformer-sharp`,
+		`gatsby-plugin-sharp`,
+		`gatsby-plugin-image`,
+		{
+			// See https://www.gatsbyjs.com/plugins/gatsby-plugin-manifest/?=gatsby-plugin-manifest
+			resolve: `gatsby-plugin-manifest`,
+			options: {
+				name: `Gatsby Starter WordPress Blog`,
+				short_name: `GatsbyJS & WP`,
+				start_url: `/`,
+				background_color: `#ffffff`,
+				theme_color: `#663399`,
+				display: `minimal-ui`,
+				icon: `src/images/cropped-Favicon-192x192.png`,
+			},
+		},
 
-    // See https://www.gatsbyjs.com/plugins/gatsby-plugin-react-helmet/?=gatsby-plugin-react-helmet
-    `gatsby-plugin-react-helmet`,
+		// See https://www.gatsbyjs.com/plugins/gatsby-plugin-react-helmet/?=gatsby-plugin-react-helmet
+		`gatsby-plugin-react-helmet`,
+		{
+			resolve: `gatsby-omni-font-loader`,
+			options: {
+				enableListener: true,
+				preconnect: [
+					`https://fonts.googleapis.com`,
+					`https://fonts.gstatic.com`,
+				],
+				web: [
+					{
+						name: `Open Sans`,
+						file: `https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap`,
+					},
+					{
+						name: 'Roboto',
+						file: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap',
+					},
+					{
+						name: 'DM Serif Display',
+						file: 'https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap',
+					},
+					{
+						name: 'Daydreami',
+						file: 'https://fonts.cdnfonts.com/css/daydreami',
+					},
+				],
+			},
+		},
 
-    /**
-     * this (optional) plugin enables Progressive Web App + Offline functionality
-     * To learn more, visit: https://gatsby.dev/offline
-     */
-    // `gatsby-plugin-offline`,
-  ],
-}
+		/**
+		 * this (optional) plugin enables Progressive Web App + Offline functionality
+		 * To learn more, visit: https://gatsby.dev/offline
+		 */
+		// `gatsby-plugin-offline`,
+	],
+};

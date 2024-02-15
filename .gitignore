@@ -48,3 +48,12 @@ Thumbs.db
 *.mov
 *.wmv
 
+# public folder
+public/
+
+# cache folder
+.cache/
+
+# misc file
+--backup-gatsby-node copy
+
